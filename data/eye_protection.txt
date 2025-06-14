@@ -1,0 +1,48 @@
+1 de "Eyes protected from injury"
+2 goal "Safe person"
+3 ude "Eye injury"
+4 inter "Energy transfered to vulnerable eye tissue"
+4 inter "Debris impacts eye"
+5 cause "Weed whacker flings debris"
+6 cause "Operator declines to wear eye protection"
+7 cond "Overgrown vegetation around property"
+8 act "Decided to use a weed whacker"
+9 inter "Weed whacker spinning string strikes<br/>vegetation, debris, or hard surfaces"
+10 inter "Rotating string at 10,000+ RPM"
+11 inter "Debris becomes projectiles"
+12 inter "Projectiles travel at high velocity"
+13 cond "Operator in debris field"
+14 cond "Human reaction time too slow to avoid"
+15 act "Operator wears PPE"
+16 inter "Impact-resistant lenses deflect projectile energy"
+17 cond "Polycarbonate lenses can<br/>withstand high-velocity impacts<br/>without shattering"
+18 inter "Projectile debris strikes PPE barrier"
+19 UDE "Medical care required"
+20 ude "Projectile strikes eye"
+21 and
+22 inter "Projectile approaches eyes"
+23 and
+1->2
+3->19
+4->20
+8->15
+7->8
+8->6
+8->10
+22->4
+15->18
+22->18
+5->12
+6->21
+13->21
+12->11
+11->21
+16->1
+14->21
+21->22
+20->3
+17->23
+18->23
+23->16
+10->9
+9->5

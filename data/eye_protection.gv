@@ -1,0 +1,164 @@
+digraph causal_graph {
+  rankdir=BT;
+  node [shape=plaintext fontname="Helvetica"];
+  # Source causal file: /Users/kevinl/Documents/G/Graphviz/eye_protection.txt
+
+  # Nodes
+
+
+1 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgreen"><B>Desired Effect</B></TD></TR>
+      <TR><TD>1. Eyes protected from injury</TD></TR>
+    </TABLE>
+  >];
+2 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="green"><B>Goal</B></TD></TR>
+      <TR><TD>2. Safe person</TD></TR>
+    </TABLE>
+  >];
+3 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightcoral"><B>Undesired Effect</B></TD></TR>
+      <TR><TD>3. Eye injury</TD></TR>
+    </TABLE>
+  >];
+4 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray"><B>Intermediate Effect</B></TD></TR>
+      <TR><TD>4. Debris impacts eye</TD></TR>
+    </TABLE>
+  >];
+5 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="red"><B>Cause</B></TD></TR>
+      <TR><TD>5. Weed whacker flings debris</TD></TR>
+    </TABLE>
+  >];
+6 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="red"><B>Cause</B></TD></TR>
+      <TR><TD>6. Operator declines to wear eye protection</TD></TR>
+    </TABLE>
+  >];
+7 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="#A9CCE3"><B>Precondition</B></TD></TR>
+      <TR><TD>7. Overgrown vegetation around property</TD></TR>
+    </TABLE>
+  >];
+8 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="orange"><B>Action</B></TD></TR>
+      <TR><TD>8. Decided to use a weed whacker</TD></TR>
+    </TABLE>
+  >];
+9 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray"><B>Intermediate Effect</B></TD></TR>
+      <TR><TD>9. Weed whacker spinning string strikes<br/>vegetation, debris, or hard surfaces</TD></TR>
+    </TABLE>
+  >];
+10 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray"><B>Intermediate Effect</B></TD></TR>
+      <TR><TD>10. Rotating string at 10,000+ RPM</TD></TR>
+    </TABLE>
+  >];
+11 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray"><B>Intermediate Effect</B></TD></TR>
+      <TR><TD>11. Debris becomes projectiles</TD></TR>
+    </TABLE>
+  >];
+12 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray"><B>Intermediate Effect</B></TD></TR>
+      <TR><TD>12. Projectiles travel at high velocity</TD></TR>
+    </TABLE>
+  >];
+13 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="#A9CCE3"><B>Precondition</B></TD></TR>
+      <TR><TD>13. Operator in debris field</TD></TR>
+    </TABLE>
+  >];
+14 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="#A9CCE3"><B>Precondition</B></TD></TR>
+      <TR><TD>14. Human reaction time too slow to avoid</TD></TR>
+    </TABLE>
+  >];
+15 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="orange"><B>Action</B></TD></TR>
+      <TR><TD>15. Operator wears PPE</TD></TR>
+    </TABLE>
+  >];
+16 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray"><B>Intermediate Effect</B></TD></TR>
+      <TR><TD>16. Impact-resistant lenses deflect projectile energy</TD></TR>
+    </TABLE>
+  >];
+17 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="#A9CCE3"><B>Precondition</B></TD></TR>
+      <TR><TD>17. Polycarbonate lenses can<br/>withstand high-velocity impacts<br/>without shattering</TD></TR>
+    </TABLE>
+  >];
+18 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray"><B>Intermediate Effect</B></TD></TR>
+      <TR><TD>18. Projectile debris strikes PPE barrier</TD></TR>
+    </TABLE>
+  >];
+19 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightcoral"><B>Undesired Effect</B></TD></TR>
+      <TR><TD>19. Medical care required</TD></TR>
+    </TABLE>
+  >];
+20 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightcoral"><B>Undesired Effect</B></TD></TR>
+      <TR><TD>20. Projectile strikes eye</TD></TR>
+    </TABLE>
+  >];
+  21 [label=AND, shape=circle, width=0.5, height=0.5, fixedsize=true]; // Sets fixed size
+22 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray"><B>Intermediate Effect</B></TD></TR>
+      <TR><TD>22. Projectile approaches eyes</TD></TR>
+    </TABLE>
+  >];
+  23 [label=AND, shape=circle, width=0.5, height=0.5, fixedsize=true]; // Sets fixed size
+  # Edges
+
+
+  1 -> 2;
+  3 -> 19;
+  4 -> 20;
+  8 -> 15;
+  7 -> 8;
+  8 -> 6;
+  8 -> 10;
+  22 -> 4;
+  15 -> 18;
+  22 -> 18;
+  5 -> 12;
+  6 -> 21;
+  13 -> 21;
+  12 -> 11;
+  11 -> 21;
+  16 -> 1;
+  14 -> 21;
+  21 -> 22;
+  20 -> 3;
+  17 -> 23;
+  18 -> 23;
+  23 -> 16;
+  10 -> 9;
+  9 -> 5;
+}
